@@ -1,0 +1,45 @@
+div.tables {
+    display: inline-block;
+}
+div.header  {
+    display: flex;
+    justify-content:space-around;
+}
+img.gatito {
+    width: 100%;
+}
+div.image {
+    width: 200px;
+}
+.title {
+    color: red;
+    margin: 0px;
+    text-align: center;
+}
+.author {
+    color: blue;
+}
+p.author  {
+    text-shadow: 5px 3px 5px #000;
+    color: red;
+}
+#unico {
+    font-size: 30px;
+}
+li span {
+    font-size: 18px;
+}
+img {
+    display: inline-block;
+}
+img.boxmodel {
+    height: 500px;
+    width: 500px;
+} 
+a {
+    display: block;
+    height: 20px;
+}
+ul, ol {
+    display: inline-block;
+}
