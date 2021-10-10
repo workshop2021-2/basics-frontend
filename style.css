@@ -1,0 +1,18 @@
+<style>
+ h1 {
+     color:chartreuse}
+
+.author{
+    color: blue;
+}
+#unico{
+    font-size: 30px
+}
+p span {
+    color:cyan;
+}
+img{
+display: block;
+height: 80px;
+width: 80px;
+}
