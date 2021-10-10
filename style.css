@@ -1,0 +1,29 @@
+    title{
+        color: blue;
+        margin: 0px;
+    }
+    td {
+        color: darkgreen;
+    }
+    .author{
+        color: darkorange;
+    }
+   li span{
+        font-size: x-large;
+    }
+    #unico{
+        font-size: xx-large;
+    }
+    li span{
+        font-size: 18px;
+    }
+    img{
+        display: block;
+        height: 50px;
+        width: 50px;
+    }
+    a{
+        display: inline-block;
+        height: 50px;
+        width: 20px;
+    }
