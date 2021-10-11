@@ -1,0 +1,100 @@
+
+@mixin displayFlex { 
+    display: flex;
+}
+
+@mixin justifyContent ($justifyContent) { 
+    justify-content: $justifyContent;
+}
+
+@mixin alingItems ($alingItems) { 
+    align-items: $alingItems;
+}
+
+@mixin height ($height) { 
+    height: $height;
+}
+
+@mixin width ($width) { 
+    width: $width;
+}
+
+@mixin maxHeight ($maxHeight) { 
+    max-height: $maxHeight;
+}
+
+@mixin maxWidth ($maxWidth) { 
+    max-width: $maxWidth;
+}
+
+@mixin minHeight ($minHeight) { 
+    min-height: $minHeight;
+}
+
+@mixin minWidth ($minWidth) { 
+    min-width: $minWidth;
+}
+
+@mixin flexDirection ($flexDirection) { 
+    flex-direction: $flexDirection;
+}
+
+@mixin fontWeight ($fontWeight) { 
+    font-weight: $fontWeight;
+}
+
+@mixin fontSize ($fontSize) { 
+    font-size: $fontSize;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: rgb(255,244,225);
+    background: linear-gradient(0deg, rgba(255,244,225,1) 67%, rgba(237,218,182,1) 96%, rgba(227,201,155,1) 100%, rgba(231,200,144,1) 100%);
+    font-family: 'Gentium Book Basic', serif;
+    background-repeat: no-repeat;
+}
+
+.main{
+    @include minHeight(100vh);
+    @include height(100%);
+}
+
+.main--section--container{
+    @include displayFlex;
+    @include flexDirection(column);
+    position: fixed;
+    @include width(100%);
+    @include height(100%);
+    @include maxWidth(120px);
+    @include maxHeight(450px);
+    @include minWidth(50px);
+    @include justifyContent(center);
+    @include alingItems(center);
+    margin-left: 10px;
+    margin-top: 210px;
+    background-color: transparent;
+}
+
+.main--section--container__contact, p{
+ @include fontSize(larger); 
+ @include fontWeight(bold);
+ color: black;
+ margin-bottom: 20px;
+}
+
+.main-container__Media{
+    overflow: hidden;
+    transition: 450ms all;
+    transform-origin:  center;
+    padding: 5px;
+}
+
+.main-container__Media:hover ~ .main-container__Media{
+    transform: translate3d(0, 50px, 50px);
+}
+
+.main-container__Media:hover{
+    transform: scale(1.5);
+}

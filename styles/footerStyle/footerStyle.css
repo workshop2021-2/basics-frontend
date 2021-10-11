@@ -1,0 +1,20 @@
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  max-height: 50px;
+  min-height: 0;
+  height: 100%;
+  background-color: rgba(60, 57, 57, 0.692);
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: -21px;
+}
+/*# sourceMappingURL=footerStyle.css.map */
