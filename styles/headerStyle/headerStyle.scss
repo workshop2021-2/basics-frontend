@@ -49,18 +49,26 @@
 }
 .header{
  min-height: 1px;
- height: 100%;
+ @include height(100%);
+ @include width(100%);
+ @include minWidth(100px); 
+ @include minHeight(10vh);
+ @include maxHeight(100vh);
+ @include displayFlex;
+ @include justifyContent(center);
 }
 
  .header-container{
     @include displayFlex;
     position: fixed;
     @include justifyContent(space-around); 
-    background-color: transparent;
+    background: rgb(255,244,225);
+    background: linear-gradient(0deg, rgba(255,244,225,1) 0%, rgba(237,218,182,1) 94%, rgba(227,201,155,1) 100%, rgba(231,200,144,1) 100%);
     @include alingItems(center); 
     @include width(100%);
     @include height(0px); 
-    @include minWidth(100px); 
+    @include minWidth(100vh);
+    @include maxWidth(100vh); 
     @include minHeight(10vh);
     @include maxHeight(100vh);
     box-shadow: 1px 8px 17px -3px rgba(0,0,0,1);

@@ -57,8 +57,12 @@ body{
 }
 
 .main{
-    @include minHeight(100vh);
+    @include displayFlex;
+    @include flexDirection(column);
     @include height(100%);
+    @include minHeight(10vh);    
+    @include maxHeight(100%);
+    padding-top: 12vh;
 }
 
 .main--section--container{
@@ -72,8 +76,7 @@ body{
     @include minWidth(50px);
     @include justifyContent(center);
     @include alingItems(center);
-    margin-left: 10px;
-    margin-top: 210px;
+    margin-left: 30px;
     background-color: transparent;
 }
 
@@ -97,4 +100,251 @@ body{
 
 .main-container__Media:hover{
     transform: scale(1.5);
+}
+
+.main-container{
+    @include displayFlex;
+    @include flexDirection(column);
+    @include justifyContent(center);
+    @include alingItems(center);
+    @include width(100%);
+    @include height(100%);
+    @include minWidth(50vh);
+    @include maxWidth(80vh);
+    @include minHeight(80vh);
+    @include maxHeight(100vh);
+    padding-left: 60vh;    
+}
+
+.main-container__img{
+    @include width(100%);
+    @include height(100%);
+    @include maxWidth(250px);
+    @include maxHeight(250px);
+    border-radius:150px; 
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+    padding-bottom: 0;
+}
+
+.main-container__about{
+    letter-spacing: 2pt;
+    word-spacing: 5pt;
+    line-height: 30pt;
+    text-align: justify;
+    color: #441818;
+    @include fontSize(25px); 
+}
+
+
+.main-container_favorite{
+    @include displayFlex;
+    @include width(100%);
+    @include height(100%);
+    @include flexDirection(row);
+    @include alingItems(center);
+    @include justifyContent(space-around);    
+}
+
+.main-container_favorite__song {
+    @include displayFlex;
+    @include flexDirection(column);
+    @include alingItems(center);
+}
+
+.main-container_favorite__book {
+    @include displayFlex;
+    @include flexDirection(column);
+    @include alingItems(center);
+}
+
+.main-container_favorite__lichessProfile {
+    @include displayFlex;
+    @include flexDirection(column);
+    @include alingItems(center);
+}
+
+.favoriteImg{
+    @include width(100%);
+    @include height(100%);
+    @include maxWidth(150px);
+    @include maxHeight(150px); 
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+    padding-bottom: 0;
+}
+
+.main-container1{
+    @include displayFlex;
+    @include width(100%);
+    @include height(100%);
+    @include minWidth(50vh);
+    @include maxWidth(100vh);
+    @include minHeight(80vh);
+    @include maxHeight(100%);
+    @include alingItems(center);
+    background: transparent;
+    border: 1px solid black;
+    margin-top: 180px;
+    margin-left: 51vh;
+    box-shadow: 0px 10px 13px -7px #000000, 20px 14px 32px 20px rgba(0,0,0,0);
+}
+
+ .main-container1__part1{
+    @include displayFlex;
+    @include justifyContent(space-around);
+    @include flexDirection(column);
+    @include alingItems(center);
+    background:rgba(3,78,81,0.8);
+    @include width(100%);
+    @include height(100%);
+    @include minHeight(150vh);
+    @include maxHeight(100%);
+    padding: 15px;
+    color: wheat;
+}
+
+.main-container1__part1 h2{
+    text-align: center;
+    @include fontSize(30px);
+}
+
+.main-container1__part1__contact ul li{
+   color: wheat;
+   @include fontWeight(lighter);
+   @include fontSize(120%);
+   letter-spacing: 2pt;
+   word-spacing: 5pt;
+}
+
+.main-container1__part1__mainattitudes ul{
+    @include fontSize(110%);
+    @include fontWeight(lighter);
+    letter-spacing: 2pt;
+    word-spacing: 5pt;
+}
+
+.main-container1__part1__certifications p{
+    @include fontSize(110%);
+    @include fontWeight(lighter);
+    letter-spacing: 2pt;
+    word-spacing: 5pt;
+    color: wheat;
+    text-align: center;
+} 
+
+.main-container1__part2{
+    @include displayFlex;
+    @include flexDirection(column);    
+    @include width(100%);
+    @include height(100%);
+    @include minHeight(80vh);
+    @include maxHeight(200vh);
+    @include maxWidth(100vh);
+    @include minWidth(55vh);
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.main-container1__part2__header{
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.main-container1__part2__header h1{
+    @include fontSize(45px);
+    letter-spacing: 1pt;
+    word-spacing: 5pt;
+    margin: 0;
+}
+
+.main-container1__part2__header h2{
+    margin-top: 5px;
+    @include fontWeight(bold);
+    word-spacing: 5pt;
+    margin-bottom: 0;
+}
+
+.main-container1__part2__header h3{
+    margin-top: 5px;
+    @include fontSize(25px);
+    @include fontWeight(lighter);
+    color: rgb(116, 114, 114);
+    margin-bottom: 10px;
+}
+
+.main-container1__part2__abstract{
+    padding-top: 20px;
+    margin-bottom: 0;
+}
+
+.abstract{
+    @include fontSize(35px);
+    @include fontWeight(bold);
+    word-spacing: 5pt;
+    margin: 0;
+}
+
+.abstract-content{
+    letter-spacing: 1pt;
+    word-spacing: 5pt;
+    line-height: 20pt;    
+}
+
+.main-container1__part2__experience{
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.experience{
+    @include fontSize(35px);
+    @include fontWeight(bold);
+    word-spacing: 5pt;
+    margin: 0;
+}
+
+.experience-content{
+    letter-spacing: 1pt;
+    word-spacing: 5pt;
+    line-height: 20pt;
+}
+
+.experiencie-content__localitation{
+    @include fontWeight(lighter);
+    color: rgb(116, 114, 114);
+}
+
+.main-container1__part2__education{
+    padding-bottom: 50px;
+}
+
+.education{
+    @include fontSize(35px);
+    @include fontWeight(bold);
+    word-spacing: 5pt;
+    margin: 0;
+}
+
+.education-content{
+    letter-spacing: 1pt;
+    word-spacing: 5pt;
+    line-height: 20pt;
+}
+
+.resume-download{
+    background-color: transparent;
+    @include maxHeight(50px);
+    @include maxWidth(35vh);
+    @include height(50px);  
+    border: none;
+    border-radius: 25px;
+    color: rgba(3,78,81,0.8);
+    cursor: pointer;
+    @include fontSize(25px);
+    font-size: 25px;
+    font-family: 'Gentium Book Basic', serif;
+    @include fontWeight(bolder);
+    letter-spacing: 1px;
+    margin: 50px 0 0 80vh;
+    text-align: center;  
+    padding-top: 10px;
+    transition: all 0.5s 0s ease;
 }
