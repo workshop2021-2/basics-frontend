@@ -1,0 +1,46 @@
+div.tables{
+    display: inline-block;
+}
+div.header{
+    display: flex;
+    justify-content: space-around;
+}
+img.elbicho{
+    width: 100%;
+}
+div.image{
+    width: 200px;
+}
+.title{
+    color:red;
+    margin: 0px;
+    text-align: center;
+}
+.author{
+    color:blue;
+}
+p.author{
+    color:red;
+}
+#unico{     
+    font-size: 30px;
+}
+li span {
+    font-size: 18px;
+}
+img {
+    display: block;
+    height: 400px;
+    width: 500px;
+}
+img.boxmodel {
+    height: 400px;
+    width: 550px;
+} 
+a {
+    display: inline-block;
+    height: 20px;
+}
+ul, ol {
+    display: inline-block;
+}
