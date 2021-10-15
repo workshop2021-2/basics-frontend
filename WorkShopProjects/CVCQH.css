@@ -1,0 +1,139 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	border: none;
+	outline: none;
+    font-family: 'Zilla Slab', serif;
+    color: white;
+    
+}
+header {
+    background-image: url(./imágenes/img\ background\ banner.jpg);
+    background-size: 57rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 380px;
+}
+header img {
+    width: 15rem;
+    object-fit: contain;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px #000;
+}
+.profile h1 {
+    font-size: xxx-large;
+}
+.profile span {
+    font-weight: bold;
+    font-size: 26px;
+    background-color: rgba(36, 1, 1, 0.3);
+    border-radius: 8px;
+}
+body {
+    background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(0, 0, 0), rgb(58, 22, 1));
+    height: 100%;
+    /* background-color: black; */
+    padding: 3vw 8vw;
+}
+.Content__Div {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+.Content__Div h1, h2, h3, h4, h5, h6 {
+    font-size: xx-large;
+}
+.Content__Div p {
+    font-size: 20px;
+    font-weight: normal;  
+}
+/* .skills {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+
+}
+.skills h2 {
+    font-size: xx-large;
+}
+.skills p {
+font-size: 20px;
+font-weight: bold;
+}
+.skills__bar p {
+    font-size: unset;
+    font-weight: normal;
+}
+.Jobs {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+.Jobs h3 {
+    font-size: xx-large;
+}
+.background {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+.background h4 {
+    font-size: xx-large;
+}
+.background p {
+    font-style: italic;
+    font-size: x-large;
+}
+.Related {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+.Related H5 {
+    font-size: xx-large;
+}
+.Related p {
+    font-style: italic;
+    font-size: x-large;
+}
+.Interest {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+.Interest h6 {
+    font-size: xx-large;
+}
+.Interest p {
+    font-style: italic;
+    font-size: x-large;
+} */
+footer {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer h6 {
+    font-size: -webkit-xxx-large;
+    margin-right: 15px;
+}
+.footer__contact {
+
+}
