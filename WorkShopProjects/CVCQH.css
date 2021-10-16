@@ -9,23 +9,33 @@
     color: white;
     
 }
+.container {
+    padding: 0px 10rem;
+}
+
 header {
     background-image: url(./imágenes/img\ background\ banner.jpg);
     background-size: 57rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
     height: 380px;
+    background-position: bottom;
 }
 header img {
     width: 15rem;
     object-fit: contain;
     border-radius: 5px;
-    box-shadow: 0 1px 3px #000;
+    box-shadow: 0px 1px 20px 3px #c1070773;
+}
+
+.flex-profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 4rem;
+    justify-content: space-between;
 }
 .profile h1 {
     font-size: xxx-large;
+    background-color: rgba(36, 1, 1, 0.3);
 }
 .profile span {
     font-weight: bold;
@@ -34,10 +44,10 @@ header img {
     border-radius: 8px;
 }
 body {
-    background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(0, 0, 0), rgb(58, 22, 1));
+    background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(6 1 1), rgb(147 3 22));
     height: 100%;
     /* background-color: black; */
-    padding: 3vw 8vw;
+    /* padding: 3vw 8vw; */
 }
 .Content__Div {
     height: 200px;
@@ -52,6 +62,45 @@ body {
 .Content__Div p {
     font-size: 20px;
     font-weight: normal;  
+}
+.Content__Div--skills {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    height: 23rem;
+}
+.skills__bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.skills__bar p {
+    font-size: large;
+}
+.skills__bar meter {
+    width: 120px;
+    height: 20px;
+}
+.frontend {
+    font-weight: bold;
+    font-size: 22px;
+
+}
+footer {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer h6 {
+    font-size: -webkit-xxx-large;
+    margin-right: 15px;
+}
+.footer__contact {
+    display: flex;
+    align-items: center;
 }
 /* .skills {
     height: 200px;
@@ -124,16 +173,3 @@ font-weight: bold;
     font-style: italic;
     font-size: x-large;
 } */
-footer {
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-footer h6 {
-    font-size: -webkit-xxx-large;
-    margin-right: 15px;
-}
-.footer__contact {
-
-}

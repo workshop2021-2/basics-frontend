@@ -11,19 +11,28 @@
     <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:ital@1&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="profile">
-            <h1>Christian Quirama Hernández</h1>
-            <span>frontend developer</span>
-        </div>
-        <img src="./imágenes/foto cv.jpeg" alt="Imagen de Christian Quirama">
-    </header>
+        <header>
+            <section class="container flex-profile">
+                <div class="profile">
+                    <h1>Christian Quirama Hernández</h1>
+                    <span>frontend developer</span>
+                </div>
+                <img src="./imágenes/foto cv.jpeg" alt="Imagen de Christian Quirama">
+           </section>
+        </header>
     
-        <div class="Content__Div">
+    
+    <main class="container">
+        <div class="Content__Div--skills">
             <h2>Skills</h2>
-            <p>Frontend</p>
+            <p class="frontend">Frontend</p>
                 <div class="skills__bar">
                     <p>Html5/CSS3</p>
+                    <meter low=".25" optimum=".85" high=".75" value=".5"></meter>
+                    <p>English</p>
+                    <meter low=".25" optimum=".5" high=".75" value=".5"></meter>
+                    <p>Basic JS</p>
+                    <meter low=".25" optimum=".8" high=".75" value=".2"></meter>
                 </div>
         </div>
     
@@ -43,14 +52,17 @@
         </div>
         <div class="Content__Div">
             <h6>Interest</h6>
-            <p>play videogames, reading, video making, share with friends and the litlle things that truly matter</p>
+            <p>play videogames, reading, video making, share with friends and the litlle things that truly matter.</p>
         </div>
-      
+    </main>
+        
+    
     <footer>
         <h6>CQH</h6>
         <div class="footer__contact">
-            <p>get in touch <a href="">LinKedIn</a></p>
             <img src="./imágenes/logo linkedin.png" alt="logo LinKedIn">
+            <p>get in touch <a href="">LinKedIn</a></p>
+            
         </div>
     </footer>
 </body>
