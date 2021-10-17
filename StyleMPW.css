@@ -1,0 +1,52 @@
+*{
+	margin: 40px;
+	padding: 0;
+	font-family: 'Zilla Slab', serif;
+    
+}
+body{
+	background: url(2248063.jpg);
+	display: inline-block;
+}
+.firstpart{
+	margin: 50px;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	border: none;
+	outline: none;
+    font-family: 'Zilla Slab', serif;
+    color: rgb(0, 0, 0);
+	height: 100%;
+	width: 100%; ;
+}
+.title{
+text-align: center;
+}
+.secondpart{
+	font-size:25px ;
+}
+img.english, img.colombian{
+	width: 60px;
+	height: 40px;
+	margin: 0px;
+}
+h2.contact{
+font-size: auto;
+}
+meter{
+	margin: 0px;
+}
+p{
+	margin: 0%;
+}
+.first-half{
+	color:rgb(0, 0, 0)
+} 
+.second-half, .thirdpart{
+	color:rgb(214, 212, 212);
+}
+
+
+
+
