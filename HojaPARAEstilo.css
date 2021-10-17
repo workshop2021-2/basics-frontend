@@ -1,0 +1,63 @@
+.CAJA
+    {
+    position: relative;
+    display: inline-block;
+    }
+.IMAGEN1
+    {
+    position: relative;
+    display: inline-block;
+    width: 1300px;
+    height: 300px;    
+    }
+.TITULO
+    {
+    top: 50px;
+    left: 65%;
+    position: absolute;
+    color: cornsilk;
+    font-size: 80px;
+    text-shadow:rgb(0, 0, 0) 100px;
+    }
+.Captura
+    {
+    width: 20 px;
+    height: 40px; 
+    }
+.TEXTOCONTENIDO
+    {
+    font-size: 35pt;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: brown;
+    text-align: center;
+    }
+.Captura
+    {
+display: inline-table;
+width: 200px;
+height: 200px; 
+    }
+.Captura1
+    {
+display: inline-table;
+width: 200px;
+height: 400px; 
+    }
+.Captura2
+{
+    display: inline-table;
+    width: 200px;
+    height: 200px; 
+}
+.Captura3
+{
+    display: inline-table;
+    width: 300px;
+    height: 200px; 
+}
+.Captura4
+{
+    display: inline-table;
+    width: 200px;
+    height: 200px; 
+}
