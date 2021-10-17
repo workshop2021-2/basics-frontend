@@ -4,6 +4,7 @@ body{
     color: salmon;
     font-size: 1.3rem;
     line-height: 1.3em;
+    background-color: lightgray;
 
 }
 p{
@@ -40,7 +41,7 @@ h1{
 .cajacabe a{
     color: salmon;
     text-decoration: none;
-    background-color: aquamarine;
+    background-color: slategray;
  top: 0;
  right: 0;
  left: 0;
@@ -55,14 +56,51 @@ h1{
 .footer{
     
     text-align: center;
-    background-color: aquamarine;
+    background-color: slategray;
     padding: 4rem 0;
     margin-top: 6rem;
 }
 .logo{
-    text-align: center;
+    text-align: center
     
 }
+.IMAGES{
+    offset-distance: 10PX;
+    font-display: 15px;
+
+}
+.ijs{
+display:table;
+width: 80px;
+height: 80px;
+margin: auto;
+}
+
+.iht{
+    display:table;
+    width: 80px;
+    height: 80px;
+    margin: auto;
+    }
+    .iecl{
+        display:table;
+        width: 80px;
+        height: 80px;
+        margin: auto;
+        }
+        .imys{
+            display:table;
+            width: 80px;
+            height: 80px;
+            margin: auto;
+            }
+            .idre{
+                display:table;
+                width: 80px;
+                height: 80px;
+                margin: auto;
+                }
+            
 .cabefija{
     position: fixed;
 }
