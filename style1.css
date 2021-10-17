@@ -1,0 +1,68 @@
+body{
+    position: static;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: salmon;
+    font-size: 1.3rem;
+    line-height: 1.3em;
+
+}
+p{
+    margin-bottom: 1.6rem;
+}
+h1{
+    font-size: 2rem;
+    line-height: 1.3em;
+}
+.container{
+    width: 85%;
+    max-width: 850px;
+    margin: 0 auto;
+
+}
+.textodos{
+    color: steelblue;
+    font-style: italic;
+    font-variant: small-caps;
+    text-align: right;
+    width: auto;
+}
+
+
+.cajacabe{
+    position: fixed;
+    font-size: 25pt;
+    right: 0;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    
+}
+.cajacabe a{
+    color: salmon;
+    text-decoration: none;
+    background-color: aquamarine;
+ top: 0;
+ right: 0;
+ left: 0;
+ padding: 4rem 0;
+ display: flex;
+ text-align: center;
+}
+
+.main{
+    padding-top: 15rem;
+}
+.footer{
+    
+    text-align: center;
+    background-color: aquamarine;
+    padding: 4rem 0;
+    margin-top: 6rem;
+}
+.logo{
+    text-align: center;
+    
+}
+.cabefija{
+    position: fixed;
+}

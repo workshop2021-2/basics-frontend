@@ -1,0 +1,21 @@
+h1 {
+    color: salmon;
+    box-shadow: 3px rgb(216, 8, 53);
+}
+span {
+     font-size: 20px;
+}
+#unico{
+color: aqua;
+}
+img{
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+}
+.title{
+    text-align: center;
+}
+div.tables {
+    text-align: center;
+}
