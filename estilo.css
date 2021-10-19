@@ -1,0 +1,28 @@
+        div.header {
+            display: flex;
+            justify-content: space-around;
+        }
+        h1.title {
+            text-align: center;
+            color: olive    ;
+            cursor: help;
+            text-shadow:5px 6px 7px;
+        }
+        img {
+            display: flex;
+            height: 400px;
+            width: 500px;
+        }
+        img.animal {
+            display: flex;
+            width: 500px;
+        }
+        span {
+            font-size: 50px;
+        }
+        #unico {
+            font-size: 32px;
+        }
+        .author {
+            color: darksalmon;
+        }
