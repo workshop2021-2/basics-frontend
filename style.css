@@ -1,15 +1,21 @@
-div.tables {
-    display: inline-block;
+header {
+    position: fixed;
+    width: 100%;
+    height: 40px;
+    right: 0;
+    top: 0;
+    z-index: 10;
 }
-div.header  {
-    display: flex;
-    justify-content:space-around;
+div.tables {
+    position: relative;
+    display: inline-block;
+    width: 50%;
+    background-color: brown;
+    height: 600px;
+    overflow-x: hidden;
 }
 img.gatito {
     width: 100%;
-}
-div.image {
-    width: 200px;
 }
 .title {
     color: red;
@@ -40,6 +46,45 @@ a {
     display: block;
     height: 20px;
 }
-ul, ol {
-    display: inline-block;
+.tables div {
+    background-color: cyan;
+    height: 80px;
+    width: 80px;
+    position: absolute;
+}
+.tables .one {
+    top: 0;
+    left: 0;
+}
+.tables .two {
+    top: 0;
+    left: 90px;
+}
+.tables .three {
+    top: 60px;
+    left: 200px;
+    background-color: darkgreen;
+    z-index: 2;
+}
+.tables .four {
+    top: 60px;
+    left: 260px;
+    background-color: gray;
+}
+@media (max-width: 425px) {
+    header p {
+        font-size: 20px;
+    }
+    div.tables {
+        width: 100%;
+    }
+
+}
+@media (max-width: 715px) {
+    .tables .three {
+        left: 20px;
+    }
+    .tables .four {
+        left: 50px;
+    }
 }
