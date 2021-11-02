@@ -1,0 +1,103 @@
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgb(225,243,255);
+    background: linear-gradient(0deg, rgba(225,243,255,0.6923144257703081) 0%, rgba(255,255,255,1) 32%, rgba(255,255,255,0.8323704481792717) 72%, rgba(225,243,255,1) 100%);
+}
+
+
+h1{
+    padding-bottom: 3rem;
+    font-size: calc(1.75rem + 1.5vw);
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    min-width: 320px;
+    padding: 0 3rem;
+}
+
+.data-section{
+    flex-basis: 50%;
+    padding: 3rem;
+    box-shadow: 0px 3px 11px -2px rgb(141 176 211 / 96%);
+    border-radius: 10px;  
+    max-width: 677px;
+    min-width: 320px;
+}
+.input-group-text {
+ background-color: #94bce55c;
+ border: 1px solid #8db0d3;
+}
+
+
+.form-control{
+    border: 1px solid #6592bf8c;    
+}
+
+ .input-group{
+    justify-content: center;
+} 
+
+#name-containerId{
+    padding-bottom: 2rem;
+}
+
+#credit-containerId{
+    padding: 2rem 0;
+}
+
+.range-container{
+    width: 100%;
+    padding: 2rem 0;
+}
+
+.rate{
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.results-section{
+    display: flex;
+    flex-basis: 50%;
+    flex-direction: column;
+    padding: 3rem;
+    box-shadow: 0px 3px 11px -2px rgb(141 176 211 / 96%);
+    border-radius: 10px;
+    margin-left: 2rem;
+    max-width: 677px;
+}
+
+#InteresRateId, #rateId-Answer, #span-monthlyFeeId, #monthlyFeeId{
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+    border-bottom: 4px double rgba(28,110,164,0.32);
+    max-width: 40%;
+    text-align: center;
+    font-size: x-large;
+}
+
+.userName{
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.btn{
+    margin-top: 2rem;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="./main.js" defer></script>
+    <link rel="stylesheet" href="./main.css">
+    <title>Simulador de créditos</title>
+</head>
+<body>
+    <h1>Simulador de créditos</h1>
+    <main class="main">
+      <section class="data-section">        
+        <div class="input-group flex-nowrap" id="name-containerId">
+            <span class="input-group-text" id="addon-wrapping">Ingrese su nombre:</span>
+            <input type="text" class="form-control" placeholder="nombre" aria-label="Username" aria-describedby="addon-wrapping" id="nameId" >
+          </div>
+          <div class="input-group mb-3" id="credit-containerId">
+            <span class="input-group-text">Monto del crédito</span>
+            <input type="number" min="500000" class="form-control" aria-label="Dollar amount (with dot and two decimal places)" placeholder="El crédito mínimo  es de 500.000" id="creditId">
+          </div>
+         <div class="range-container">
+            <label for="customRange2" class="form-label">A pagar en:</label> 
+            <h6 class="rangeTitle" id="rangeTitle-Id">22 meses</h6>           
+            <input type="range" class="form-range" min="22" max="72" step="1" value="22" id="rangeId">
+            <h6 class="rate" id="rateId"></h6> 
+         </div> 
+        </section>
+
+        <section class="results-section" id="results-SectionId" hidden>
+          <h3 id="usarNameId" class="userName"></h3>
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="InteresRateId">Tasa de interés:</span>
+            <input type="text" class="form-control" aria-label="Sizing example input" id="rateId-Answer"  aria-describedby="inputGroup-sizing-default" readonly>
+          </div>
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="span-monthlyFeeId">Cuota mensual:</span>
+            <input type="text" class="form-control" aria-label="Sizing example input" id="monthlyFeeId" aria-describedby="inputGroup-sizing-default" readonly>
+          </div>
+        </section>          
+    </main>
+    <button type="button" class="btn btn-primary btn-lg" id="btn-CalculateId">Calcular</button>
+</body>
+</html>
