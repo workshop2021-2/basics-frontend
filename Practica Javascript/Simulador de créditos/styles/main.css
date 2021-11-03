@@ -1,0 +1,183 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #e1f3ff;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(225, 243, 255, 0.692314)), color-stop(32%, white), color-stop(72%, rgba(255, 255, 255, 0.83237)), to(#e1f3ff));
+  background: linear-gradient(0deg, rgba(225, 243, 255, 0.692314) 0%, white 32%, rgba(255, 255, 255, 0.83237) 72%, #e1f3ff 100%);
+}
+
+h1 {
+  padding-bottom: 3rem;
+  font-size: calc(1.75rem + 1.5vw);
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  padding: 0 3rem;
+  min-width: 320px;
+  max-height: 551px;
+}
+
+.data-section {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  padding: 3rem;
+  -webkit-box-shadow: 0px 3px 11px -2px rgba(85, 147, 209, 0.74);
+          box-shadow: 0px 3px 11px -2px rgba(85, 147, 209, 0.74);
+  border-radius: 10px;
+  max-width: 677px;
+  min-width: 320px;
+}
+
+.input-group-text {
+  background-color: #94bce55c;
+  border: 1px solid #8db0d3;
+}
+
+.form-control {
+  border: 1px solid #6592bf8c;
+}
+
+.input-group {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#name-containerId {
+  padding-bottom: 2rem;
+}
+
+#credit-containerId {
+  padding: 2rem 0;
+}
+
+.range-container {
+  width: 100%;
+  padding: 2rem 0;
+}
+
+.rate {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.results {
+  padding: 0 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 519px;
+  padding-top: 2rem;
+}
+
+.results-section {
+  display: block;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  padding: 0 1rem;
+  -webkit-box-shadow: 0px 3px 11px -2px rgba(147, 188, 228, 0.74);
+          box-shadow: 0px 3px 11px -2px rgba(147, 188, 228, 0.74);
+  background: #e1f3ff;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(225, 243, 255, 0.908001)), color-stop(12%, white), color-stop(98%, rgba(255, 255, 255, 0.83237)), to(#e1f3ff));
+  background: linear-gradient(0deg, rgba(225, 243, 255, 0.908001) 0%, white 12%, rgba(255, 255, 255, 0.83237) 98%, #e1f3ff 100%);
+  border-radius: 10px;
+}
+
+#InteresRateId, #rateId-Answer, #span-monthlyFeeId, #monthlyFeeId {
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  max-width: 40%;
+  font-size: x-large;
+  border-bottom: 4px double rgba(28, 110, 164, 0.32);
+  text-align: center;
+}
+
+.userName {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.4rem;
+}
+
+.moreInfo-Container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.arrow-img {
+  -webkit-transition: all 0.5s 0s ease;
+  transition: all 0.5s 0s ease;
+  cursor: pointer;
+}
+
+.arrow-img:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.tableResults {
+  display: none;
+  overflow: auto;
+  margin-top: 1.5rem;
+  height: 100%;
+  max-height: 200px;
+}
+
+.btn {
+  margin-top: 2rem;
+}
+/*# sourceMappingURL=main.css.map */

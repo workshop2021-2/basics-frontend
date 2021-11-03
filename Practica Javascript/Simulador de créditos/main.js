@@ -13,7 +13,7 @@ const answerRange = document.querySelector("#rateId-Answer")
 const monthlyFee = document.querySelector("#monthlyFeeId")
 const arrowImg = document.querySelector('#arrowImg-Id')
 const tableResults = document.querySelector('#tableResultsId')
-
+const tblBody = document.querySelector("#tbodyId")
 
 /* Global */
 const interesRate = [1.20,1.15,1,0.98]
@@ -86,7 +86,7 @@ function validateName(name){
 }
 
 function validateCredit(credit){
-    if(credit < 0 || isNaN(credit) || credit < 500000 || credit > 100000000){
+    if(credit < 0 || isNaN(credit) || credit < 500000 || credit > 10000000000){
        return false
     } else{
         return true
@@ -117,7 +117,9 @@ const setNameCreditError = (isName, isCredit) =>{
 /* Show the data */
 const showData = (credit) =>{
         const rate = totalRate/100
-        answerName.innerHTML = `${inputName.value}`
+        const userName = inputName.value
+        const userNameCapLetter = userName.toUpperCase()
+        answerName.innerHTML = `${userNameCapLetter}`
         answerRange.value = `${totalRate}%`
         let fee = calcMonthlyFee(credit,rate)    
         fillTableContent(credit,rate,fee)
@@ -172,13 +174,41 @@ function calculateTableContent(credit,rate,fee){
 
 //Fill the table with content
 const fillTableContent = (credit,rate, fee) =>{
-     const  arrayContent = calculateTableContent(credit,rate, fee)
+        let trNodes = tblBody.childNodes         
+        
+        if (trNodes.length !== 1){           
+           tblBody.innerHTML = ""             
+        }     
+        
+    const months = inputRange.value       
+    const  arrayContent = calculateTableContent(credit,rate,fee)
+     for ( let i = 0; i <= months; i++){
+
+        const tr = document.createElement('tr')
+        const th = document.createElement('th')        
+        const thText = document.createTextNode(`${arrayContent[0].values[i]}`)
+        th.appendChild(thText)
+        tr.appendChild(th)     
+
+        for( let j = 1; j <= 3; j++){
+            const td =  document.createElement('td')
+            let content = arrayContent[j].values[i]
+            content = new Intl.NumberFormat('es-CO').format(content)
+            const tdText = document.createTextNode(`${content} $`)
+            td.appendChild(tdText)
+            tr.appendChild(td)
+        }       
+        tblBody.appendChild(tr)
+     }
+      
 }
 
 
 //display the table results
 arrowImg.addEventListener('click', () =>{    
-        let displayTable =  tableResults.style.display    
-        displayTable === "" || displayTable === "none"? displayTable = "block" : displayTable = "" 
+        let displayTable =  tableResults.style.display
+        let transformImg =   arrowImg.style.transform 
+        displayTable === "" || displayTable === "none"? (displayTable = "block" , transformImg = "rotate(180deg)") : (displayTable = "" , transformImg = "") 
         tableResults.style.display = displayTable
+        arrowImg.style.transform = transformImg
 })
