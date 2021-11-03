@@ -9,8 +9,9 @@
     <link rel="stylesheet" href="./main.css">
     <title>Simulador de créditos</title>
 </head>
-<body>
-    <h1>Simulador de créditos</h1>
+<body>    
+  
+  <h1>Simulador de créditos</h1>
     <main class="main">
       <section class="data-section">        
         <div class="input-group flex-nowrap" id="name-containerId">
@@ -19,7 +20,7 @@
           </div>
           <div class="input-group mb-3" id="credit-containerId">
             <span class="input-group-text">Monto del crédito</span>
-            <input type="number" min="500000" class="form-control" aria-label="Dollar amount (with dot and two decimal places)" placeholder="El crédito mínimo  es de 500.000" id="creditId">
+            <input type="number" min="500000" max="100000000" maxlength="10" class="form-control" aria-label="Dollar amount (with dot and two decimal places)" placeholder="El crédito mínimo  es de 500.000" id="creditId">
           </div>
          <div class="range-container">
             <label for="customRange2" class="form-label">A pagar en:</label> 
@@ -28,7 +29,7 @@
             <h6 class="rate" id="rateId"></h6> 
          </div> 
         </section>
-
+        <article class="results" id="resultsId">  
         <section class="results-section" id="results-SectionId" hidden>
           <h3 id="usarNameId" class="userName"></h3>
           <div class="input-group mb-3">
@@ -39,7 +40,26 @@
             <span class="input-group-text" id="span-monthlyFeeId">Cuota mensual:</span>
             <input type="text" class="form-control" aria-label="Sizing example input" id="monthlyFeeId" aria-describedby="inputGroup-sizing-default" readonly>
           </div>
-        </section>          
+          <div class="moreInfo-Container" id="moreInfo-ContainerId">
+            <h6 ><small class="text-muted">Mostrar más información</small></h6>
+            <img src="./resources/arrow.png" alt="flecha" class="arrow-img" id="arrowImg-Id">
+          </div>         
+        </section>
+        <section class="tableResults" id="tableResultsId">
+          <table class="table table-hover" id="tableId">
+            <thead>
+              <tr>
+                <th scope="col">Período</th>
+                <th scope="col">Abono capital</th>
+                <th scope="col">Interés</th>
+                <th scope="col">Saldo</th>
+              </tr>
+            </thead>
+            <tbody>
+            </tbody>
+          </table>
+        </section> 
+      </article>     
     </main>
     <button type="button" class="btn btn-primary btn-lg" id="btn-CalculateId">Calcular</button>
 </body>

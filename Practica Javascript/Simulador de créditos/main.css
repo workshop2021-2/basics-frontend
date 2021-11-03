@@ -30,6 +30,7 @@ h1{
     align-items: center;
     min-width: 320px;
     padding: 0 3rem;
+    max-height: 480px;
 }
 
 .data-section{
@@ -72,15 +73,21 @@ h1{
     margin-top: 1rem;
 }
 
-.results-section{
+.results{
+    padding: 0 2rem;
     display: flex;
-    flex-basis: 50%;
     flex-direction: column;
-    padding: 3rem;
+    height: 100%;
+}
+
+.results-section{
+    display: block;
+    flex-basis: 50%;
+    padding: 0 1rem;
     box-shadow: 0px 3px 11px -2px rgb(141 176 211 / 96%);
+    background: rgb(225,243,255);
+    background: linear-gradient(0deg, rgba(225,243,255,0.908000700280112) 0%, rgba(255,255,255,1) 12%, rgba(255,255,255,0.8323704481792717) 98%, rgba(225,243,255,1) 100%);
     border-radius: 10px;
-    margin-left: 2rem;
-    max-width: 677px;
 }
 
 #InteresRateId, #rateId-Answer, #span-monthlyFeeId, #monthlyFeeId{
@@ -95,7 +102,32 @@ h1{
 
 .userName{
     text-align: center;
-    margin-bottom: 4rem;
+    padding: 2rem;
+}
+
+.moreInfo-Container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2rem;
+    width: 100%;
+}
+
+ .arrow-img {
+    transition: all 0.5s 0s ease;     
+    cursor: pointer;  
+} 
+
+.arrow-img:hover{
+    transform: scale(1.5);;
+}
+
+.tableResults{
+    display: none;
+    overflow:scroll;
+    overflow-x: hidden;
+    margin-top: 3rem;
 }
 
 .btn{

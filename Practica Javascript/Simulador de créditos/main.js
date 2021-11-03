@@ -1,5 +1,3 @@
-
-
 //DOM elements data section
 const inputRange = document.querySelector("#rangeId")
 const rangeTitle = document.querySelector("#rangeTitle-Id")
@@ -13,12 +11,15 @@ const resultSectionId = document.querySelector("#results-SectionId")
 const answerName = document.querySelector("#usarNameId")
 const answerRange = document.querySelector("#rateId-Answer")
 const monthlyFee = document.querySelector("#monthlyFeeId")
+const arrowImg = document.querySelector('#arrowImg-Id')
+const tableResults = document.querySelector('#tableResultsId')
 
 
 /* Global */
 const interesRate = [1.20,1.15,1,0.98]
 const rateMsj = 'Tasa de interés:'
 let totalRate = 1.2
+
 
 //error messages and styles
 const creditErrorStyle = "border: 1px solid #ff00008c;" 
@@ -50,16 +51,16 @@ inputRange.oninput = () =>{
 
 //Activate the calculation answer
 btnCalculate.onclick = () =>{
-const name =  inputName.value 
-let credit =  inputCredit.value
-const isName = validateName(name)
-const isCredit = validateCredit(credit)
+    const name =  inputName.value
+    const credit = inputCredit.value
+    const isName = validateName(name)
+    const isCredit = validateCredit(credit)
 
-if(!isName || !isCredit){
-    setNameCreditError(isName, isCredit)
-    return
-}
-    showData()
+    if(!isName || !isCredit){
+        setNameCreditError(isName, isCredit)
+        return
+    }
+        showData(credit)
 }
 
 //Clean the error styles for inputs
@@ -85,7 +86,7 @@ function validateName(name){
 }
 
 function validateCredit(credit){
-    if(credit < 0 || isNaN(credit) || credit < 500000){
+    if(credit < 0 || isNaN(credit) || credit < 500000 || credit > 100000000){
        return false
     } else{
         return true
@@ -102,7 +103,6 @@ const setNameCreditError = (isName, isCredit) =>{
         inputName.value = ""
 
     }else if(!isName && isCredit){
-
         inputName.setAttribute("style", nameErrorStyle)
         inputName.setAttribute("placeholder", nameErrorMsj)
         inputName.value = ""
@@ -115,15 +115,70 @@ const setNameCreditError = (isName, isCredit) =>{
 
 
 /* Show the data */
-const showData = () =>{
-    answerName.innerHTML = `${inputName.value}`
-    answerRange.value = `${totalRate}%`
-    monthlyFee.value = calcMonthlyFee()
-    resultSectionId.hidden = false
+const showData = (credit) =>{
+        const rate = totalRate/100
+        answerName.innerHTML = `${inputName.value}`
+        answerRange.value = `${totalRate}%`
+        let fee = calcMonthlyFee(credit,rate)    
+        fillTableContent(credit,rate,fee)
+        fee = new Intl.NumberFormat('es-CO').format(fee)
+        monthlyFee.value = `${fee} $`
+        resultSectionId.hidden = false
 }
 
-const calcMonthlyFee = () =>{
-
-
-
+//Calculate the Monthly fee
+const calcMonthlyFee = (credit, rate) =>{
+        const range = inputRange.value
+        const feePow = Math.pow(1+rate, range)
+        let fee = (credit*rate*feePow) /(feePow-1)
+        fee = fee.toFixed()
+        return fee
 }
+
+//Calculate table content
+function calculateTableContent(credit,rate,fee){
+        const months = inputRange.value
+        let capitalPayment = 0
+        let balance = credit
+        let interest = 0
+        const arrayContent = [{table_title: 'Periodo', values: []}, {table_title: 'Abono capital', values: []}, {table_title: 'Interés', values: []}, {table_title: 'Saldo', values: []}]
+        arrayContent[0].values.push(0)
+        arrayContent[1].values.push(0)
+        arrayContent[2].values.push(0)
+        arrayContent[3].values.push(balance)
+
+    for ( let i = 1; i <= months; i++){ 
+
+        interest = rate*balance
+        capitalPayment = fee - interest
+        balance = balance - capitalPayment      
+
+        capitalPayment = capitalPayment.toFixed(2)
+        interest = interest.toFixed(2)
+        balance = balance.toFixed(2)
+
+        arrayContent[0].values.push(i)
+        arrayContent[1].values.push(capitalPayment)
+        arrayContent[2].values.push(interest)
+
+        if (i == months) {
+            arrayContent[3].values.push(0)
+        } else {            
+            arrayContent[3].values.push(balance)
+        }
+    }
+        return arrayContent
+}
+
+//Fill the table with content
+const fillTableContent = (credit,rate, fee) =>{
+     const  arrayContent = calculateTableContent(credit,rate, fee)
+}
+
+
+//display the table results
+arrowImg.addEventListener('click', () =>{    
+        let displayTable =  tableResults.style.display    
+        displayTable === "" || displayTable === "none"? displayTable = "block" : displayTable = "" 
+        tableResults.style.display = displayTable
+})
