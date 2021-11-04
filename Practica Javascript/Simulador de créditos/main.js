@@ -7,6 +7,7 @@ const inputCredit = document.querySelector('#creditId')
 const btnCalculate = document.querySelector("#btn-CalculateId")
 
 //DOM elements answer section
+const resultArticle = document.querySelector("#resultsId")
 const resultSectionId = document.querySelector("#results-SectionId")
 const answerName = document.querySelector("#usarNameId")
 const answerRange = document.querySelector("#rateId-Answer")
@@ -66,7 +67,6 @@ btnCalculate.onclick = () =>{
 //Clean the error styles for inputs
 inputName.onclick = () =>{
     inputName.style.border = '1px solid #8db0d3'
-    inputName.style.width = '100%'
     inputName.removeAttribute("placeholder")
 }
 
@@ -125,6 +125,7 @@ const showData = (credit) =>{
         fillTableContent(credit,rate,fee)
         fee = new Intl.NumberFormat('es-CO').format(fee)
         monthlyFee.value = `${fee} $`
+        resultArticle.hidden = false
         resultSectionId.hidden = false
 }
 
@@ -212,3 +213,4 @@ arrowImg.addEventListener('click', () =>{
         tableResults.style.display = displayTable
         arrowImg.style.transform = transformImg
 })
+
