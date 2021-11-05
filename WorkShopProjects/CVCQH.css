@@ -173,3 +173,30 @@ font-weight: bold;
     font-style: italic;
     font-size: x-large;
 } */
+@media only screen and (max-width: 600px) {
+   .container {
+    width: 100%;
+    padding: 0px 1rem; 
+}   
+.flex-profile {
+    padding: 1rem 1rem;
+}
+header {
+    height: 200px;
+    background-size: 20rem;
+    background-position: center;
+} 
+header img {
+    width: 10rem;
+
+}
+.profile h1 {
+  font-size: x-large;  
+}
+.profile span {
+font-size: large;
+font-weight: lighter;
+} 
+.Content__Div {
+    height: auto;
+}
