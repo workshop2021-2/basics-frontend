@@ -26,3 +26,8 @@
         .author {
             color: darksalmon;
         }
+@media (max-width: 425px) {
+    div.header {
+        font-size: 800px;
+    }
+}
