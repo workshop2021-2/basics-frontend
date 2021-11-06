@@ -1,0 +1,16 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(110, 110, 196);
+}
+header h1 {
+    font-size: x-large;
+}
+.cuadroDatos {
+    padding: 0px 0px 0px 25rem;
+    height: 36rem;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
