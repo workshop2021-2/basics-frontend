@@ -12,7 +12,7 @@
 <body>
     <header>
         <div>
-        <H1> Simulador CQH</H1>
+        <h1> Simulador CQH</h1>
         </div>  
         <div>
             <span>SIMULADOR</span>
@@ -29,7 +29,7 @@
                 <div class="input-group mb-3">
                     <span class="input-group-text">$</span>
                     <span class="input-group-text">0.00</span>
-                    <input type="number" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
+                    <input type="number" id="monto" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
                 </div>
             </div>  
             <div>
@@ -37,15 +37,15 @@
                 <div class="input-group mb-3">
                     <!-- <span class="input-group-text">$</span> -->
                     <span class="input-group-text">6</span>
-                    <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
+                    <input type="number" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
                 </div>
             </div>  
                 <div class="input-group mb-3">
                 <span class="input-group-text" id="basic-addon1"></span>
-                <input type="text" id="username" value="eso tilin" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                <input type="text" id="username" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
                 </div>
             <div>
-                <button type="button" class="btn btn-primary btn-lg">BORRAR</button>
+                <button type="button" id="borrar" class="btn btn-primary btn-lg">BORRAR</button>
                 <button type="button" id="calcular" class="btn btn-secondary btn-lg">CALCULAR</button>
             </div>
         </div>
@@ -64,7 +64,7 @@
                       <tr>
                         <th class="resultadoCuota" scope="row">cuota mensual</th>
                         <td colspan="2" id="resultadoNombre" class="table-active">Crédito a nombre de </td>
-                        <td>Intereses</td>
+                        <td id="interes">Intereses</td>
                       </tr>
                     </tbody>
                   </table>
