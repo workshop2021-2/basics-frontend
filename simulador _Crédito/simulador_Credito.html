@@ -15,41 +15,42 @@
         <h1> Simulador CQH</h1>
         </div>  
         <div>
-            <span>SIMULADOR</span>
             <h2>Crédito de libre inversión</h2>
         </div>
     </header>
     <main>
-        <div class="cuadroDatos">
-            <h1>
-                Datos generales
-            </h1>
-            <div>
-                <label for="form-control">MONTO DEL PRÉSTAMO</label>
-                <div class="input-group mb-3">
-                    <span class="input-group-text">$</span>
-                    <span class="input-group-text">0.00</span>
-                    <input type="number" id="monto" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
+        <div class="container">
+            <div class="cuadroDatos">
+                <h1>
+                    Datos generales
+                </h1>
+                <div>
+                    <label for="form-control">MONTO DEL PRÉSTAMO</label>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">$</span>
+                        <!-- <span class="input-group-text">0.00</span> -->
+                        <input type="number" id="monto" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
+                    </div>
+                </div>  
+                <div>
+                    <label for="form-control">PLAZO EN MESES</label>
+                    <div class="input-group mb-3">
+                        <!-- <span class="input-group-text">$</span> -->
+                        <span class="input-group-text">6</span>
+                        <input type="number" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
+                    </div>
+                </div>  
+                    <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1"></span>
+                    <input type="text" id="username" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+                <div>
+                    <button type="button" id="borrar" class="btn btn-primary btn-lg">BORRAR</button>
+                    <button type="button" id="calcular" class="btn btn-secondary btn-lg">CALCULAR</button>
                 </div>
-            </div>  
-            <div>
-                <label for="form-control">PLAZO EN MESES</label>
-                <div class="input-group mb-3">
-                    <!-- <span class="input-group-text">$</span> -->
-                    <span class="input-group-text">6</span>
-                    <input type="number" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
-                </div>
-            </div>  
-                <div class="input-group mb-3">
-                <span class="input-group-text" id="basic-addon1"></span>
-                <input type="text" id="username" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
-                </div>
-            <div>
-                <button type="button" id="borrar" class="btn btn-primary btn-lg">BORRAR</button>
-                <button type="button" id="calcular" class="btn btn-secondary btn-lg">CALCULAR</button>
             </div>
         </div>
-            <div>
+            <div class="resultados">
                 <table class="table">
                     <thead>
                       Resultado
@@ -69,6 +70,9 @@
                     </tbody>
                   </table>
             </div>
+            <footer>
+
+            </footer>
     </main> 
 </body>
 </html>
